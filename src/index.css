@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #1ea338, #168d1a, #0f8113, #035f0b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+/* Custom fade effect */
+.text-fade {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+/* Hover animations */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
