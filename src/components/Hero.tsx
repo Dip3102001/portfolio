@@ -30,7 +30,7 @@ const Hero:React.FC = () => {
               </h1>
               <h2 className="text-2xl font-bold mb-4">
                 <span className="text-white">Curious</span>,{" "}
-                <span className="text-orange-400">tinkerer</span>,{" "}
+                <span className="text-orange-400">Tinkerer</span>,{" "}
                 <span className="text-white">Explorer</span>
               </h2>
               <p className="text-xl mb-8">
