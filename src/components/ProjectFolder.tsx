@@ -14,7 +14,7 @@ const ProjectFolder: React.FC<ProjectFolderProps> = ({ folderTitle, projects }) 
   return (
     <div className="p-6 rounded-lg shadow-lg">
       {/* Folder Title */}
-      <h2 className="text-2xl font-bold mb-6 text-primary">{folderTitle}</h2>
+      <h2 className="text-2xl font-bold mb-6">{folderTitle}</h2>
 
       {/* Grid of Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

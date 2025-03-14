@@ -1,10 +1,27 @@
 @import "tailwindcss";
+
 @plugin "daisyui";
 
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.class-name {
+  margin: 0;
+  padding: 0;
+}
+
+
+.user-bubble {
+  background-color: #41c300;
+  color: white;
+}
+
+.other-bubble {
+  background-color: #4a26fd;
+  color: white;
 }
 
 .animated-gradient {
@@ -28,3 +45,4 @@
   transform: translateY(-8px) rotate(1deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+

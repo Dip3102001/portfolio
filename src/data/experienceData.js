@@ -2,24 +2,27 @@
 export const experiences = [
     {
       id: 1,
-      title: "Software Development Engineer I",
-      company: "Amazon Web Services (AWS)",
-      dateRange: "Sep 2024 - Present",
+      title: "Project Intern",
+      company: "Cistel",
+      dateRange: "Jan 2025 - Present",
       achievements: [
-        "Developing and optimizing the testing platform, along with developer tools and frameworks for various stakeholders, including Oracle, MySQL, and PostgreSQL, to ensure high-quality software delivery."
+        "Machine Health Diagnosis: Working on an industry-sponsored project at Cistel to diagnose the health of machine equipment.",
+        "Research & Methodology Enhancement: Conducted a literature review and iteratively improved strategies to achieve superior results.",
+        "Optimized Experiment Pipeline: Developed an end-to-end pipeline, reducing experiment execution time by 50% and enabling quick feedback for improvements.",
+        "Benchmark Achievement: Set a new benchmark on the Paderborn dataset for fault diagnosis through refined methodologies."
       ]
     },
     {
       id: 2,
-      title: "Software Engineer",
-      company: "Newgen Software Technologies Ltd",
-      dateRange: "Sep 2020 - Aug 2022",
+      title: "Research Intern",
+      company: "Indian Space Research Organization",
+      dateRange: "Jan 2023 - May 2023",
       achievements: [
-        "Led development of a loan origination system for Bank Muscat Oman, boosting profitability.",
-        "Streamlined Equity Bank's operations, eliminating over 100 hours of manual work weekly, earning the Pinnacle performance award.",
-        "Digitized KCB Uganda's account opening, resulting in a 30% increase in accounts opened.",
-        "Addressed critical challenges for Ecobank Group's T24 core banking system, deployed across 32 countries.",
-        "Created an advanced installer, reducing manual installation time by 6 hours, earning the Standing Ovation award."
+        "Developed Deep Learning Models: Trained Conv-LSTM (97.33% accuracy) and ResNet-34 (96% accuracy) on the SI-STSAR-7 dataset, selecting Conv-LSTM for final predictions.",
+        "Optimized Preprocessing Pipeline: Automated SAR image denoising using SNAP’s GPT, reducing processing time from 25 minutes to 5 minutes per image (4x speed-up).",
+        "Automated Data Acquisition: Created a shell script for batch downloading 6 consecutive SAR images from ASF-VERTEX, eliminating manual effort.",
+        "Improved Scalability & Performance: Streamlined large-scale SAR image processing, cutting manual workload from hours to minutes through automation.",
+        "Web Development Relevance: Gained experience in backend automation, API integration, and cloud-based data processing, applicable to web-based applications."
       ]
     }
   ];

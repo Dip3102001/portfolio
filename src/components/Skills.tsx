@@ -10,31 +10,27 @@ const SkillsSection:React.FC = () => {
       title: "Web Tech Stack",
       skills: [
         "HTML5", "CSS3", "JavaScript", "TypeScript", "React.js", 
-        "Vue.js", "Angular", "Node.js", "Express.js", "Next.js", 
-        "GraphQL", "REST API", "SASS/SCSS", "Tailwind CSS", "Bootstrap"
+        "Angular", "Node.js", "Express.js","REST API", "Tailwind CSS", "Bootstrap", "DaisyUI"
       ]
     },
     {
       title: "ML Tech Stack",
       skills: [
-        "Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", 
+        "Python", "PyTorch", "Scikit-learn", "Pandas", 
         "NumPy", "Matplotlib", "Keras", "NLTK", "OpenCV", 
-        "Jupyter", "Hugging Face", "LangChain", "MLflow"
+        "Jupyter", "Hugging Face"
       ]
     },
     {
       title: "DevOps & Tools",
       skills: [
-        "Git", "GitHub Actions", "Docker", "Kubernetes", "AWS", 
-        "Azure", "GCP", "Jenkins", "CircleCI", "Terraform", 
-        "Ansible", "Prometheus", "Grafana", "Linux", "Bash"
+        "Git", "Docker", "Kubernetes", "AWS", "GCP", "Terraform", "Linux", "Bash"
       ]
     },
     {
       title: "Databases & Storage",
       skills: [
-        "MySQL", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch", 
-        "DynamoDB", "Firebase", "Cassandra", "Neo4j", "SQLite"
+        "MySQL", "PostgreSQL", "MongoDB", "Redis", "Firebase", "SQLite"
       ]
     }
   ];

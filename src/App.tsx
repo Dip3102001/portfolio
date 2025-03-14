@@ -8,14 +8,24 @@ import Footer from './components/Footer';
 import './App.css';
 import ChatbotWidget from './components/Chatbot';
 
+
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200 p-4">
-      <Navbar/>      
-      <Hero/>
-      <ChatbotWidget/>
+    
+      <Router>
+        <Routes>
+          <Route path="/" element={<Hero/>}/>
+        </Routes>
+      </Router>
+
+      {/* <ChatbotWidget/> */}
       {/* <MainContent/> */}
       {/* <Footer/>     */}
+      {/* <BigProjectCardRack/> */}
     </div>
   )
 }

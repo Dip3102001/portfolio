@@ -1,0 +1,9 @@
+Fashion mnist data is given. Mnist data is about digits, sort-of like helloworld type of dataset, person who wants to start their careers in AI/ML use this dataset as their smooth start. Later, group of researcher have created another dataset call fashion dataset. 
+
+Fashion MNIST is a dataset designed as a drop-in replacement for the original MNIST dataset, containing 70,000 grayscale images (28x28 pixels) of 10 fashion-related categories, such as T-shirts, sneakers, and bags. It is widely used for benchmarking image classification models, particularly in deep learning. Unlike MNIST's handwritten digits, Fashion MNIST provides a more complex and realistic challenge for modern computer vision tasks while maintaining a similar structure to ensure easy adoption in existing models.
+
+But dataset that we are working with have added twist. Author of this dataset modified label of dataset such that instead of 10 there are now 5 labels. And our task is to perform Deep learning algorithm to get an insight about labeling and improving result of proposed benchmark using various techniques that have been learned during course. 
+
+----
+
+

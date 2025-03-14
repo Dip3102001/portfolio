@@ -117,8 +117,9 @@ const ChatbotWidget : React.FC = () => {
                 key={index} 
                 className={`chat ${message.sender === 'user' ? 'chat-end' : 'chat-start'} mb-3`}
               >
-                <div className={`chat-bubble ${message.sender === 'user' ? 'chat-bubble-primary' : 'chat-bubble-secondary'}`}>
-                  {message.text}
+                <div data-theme="mytheme" 
+                    className={`chat-bubble ${message.sender === 'user' ? 'user-bubble' : 'other-bubble'}`}>
+                    {message.text}
                 </div>
               </div>
             ))}
@@ -126,7 +127,7 @@ const ChatbotWidget : React.FC = () => {
           </div>
           
           {/* Input area */}
-          <form onSubmit={handleSendMessage} className="border-t border-base-300 p-3 flex">
+          <form onSubmit={handleSendMessage} className="border-t border-base-300 p-3 flex" >
             <input
               ref={inputRef}
               type="text"
