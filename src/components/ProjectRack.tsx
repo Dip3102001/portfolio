@@ -195,7 +195,13 @@ const ProjectsSection:React.FC = () => {
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/username/clickbait-project",
+        "url": "https://github.com/Dip3102001/Clickbait-1",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/Dip3102001/Clickbait-2",
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
@@ -251,21 +257,6 @@ const ProjectsSection:React.FC = () => {
       "Image Processing", "Machine Learning", "Deep Learning", 
       "Model Optimization", "Python", "PyTorch", "Shell Scripting", 
       "ArcGIS", "Automated Data Processing"
-    ],
-    
-    "links": [
-      {
-        "type": "github",
-        "url": "https://github.com/Dip3102001/Clickbait-1",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      },
-      {
-        "type": "github",
-        "url": "https://github.com/Dip3102001/Clickbait-2",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      }
     ]
   },
   {
@@ -328,7 +319,6 @@ const ProjectsSection:React.FC = () => {
     "shortDescription": "A messaging app inspired by WhatsApp with real-time chat and authentication.",
     "description": "As part of our end-semester Android project at Birla Vishvakarma Mahavidyalaya, we developed a WhatsApp-inspired messaging application to explore various Android development concepts. The app features a user-friendly UI for seamless interaction, mobile number-based authentication for secure access, and real-time message notifications powered by Firebase. Additionally, SQLite was used to maintain chat history, ensuring a persistent and reliable messaging experience. This project helped us integrate core Android functionalities with advanced features to create a robust messaging platform.",
     
-    // Features list
     "features": [
       {
         "title": "Real-Time Messaging",
@@ -352,7 +342,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Technologies list
     "technologies": [
       {
         "category": "Frontend",
@@ -478,7 +467,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Skills showcased
     "skills": [
       "Arduino", "Microcontrollers", "Hardware-Software Integration"
     ],
