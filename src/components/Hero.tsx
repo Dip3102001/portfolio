@@ -47,7 +47,7 @@ const Hero:React.FC = () => {
                   
                 </a>
                 <a 
-                  href="/path/to/cv.pdf" 
+                  href="/Dip Vijaykumar - Resume - SDE.pdf" 
                   download 
                   className="px-6 py-3 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 rounded-lg flex items-center gap-2"
                 >
