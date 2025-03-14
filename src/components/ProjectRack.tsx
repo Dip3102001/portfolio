@@ -61,7 +61,7 @@ const ProjectsSection:React.FC = () => {
     links: [
       {
         type: "github",
-        url: "https://github.com/username/chess-game",
+        url: "https://github.com/Dip3102001/chess",
         title: "Source Code",
         description: "View the complete source code on GitHub"
       }
@@ -133,7 +133,7 @@ const ProjectsSection:React.FC = () => {
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/username/camera-placement",
+        "url": "https://github.com/Dip3102001/CamOptix",
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
@@ -256,7 +256,13 @@ const ProjectsSection:React.FC = () => {
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/username/sea-ice-classification",
+        "url": "https://github.com/Dip3102001/Clickbait-1",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/Dip3102001/Clickbait-2",
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
@@ -313,15 +319,6 @@ const ProjectsSection:React.FC = () => {
       "PyTorch", "Python", "Model Optimization", "Web Development",
       "Flask Backend Development"
     ],
-    
-    "links": [
-      {
-        "type": "github",
-        "url": "https://github.com/username/image-colorization",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      }
-    ]
   },
   {
     "id": "whatsapp-clone",
@@ -380,7 +377,7 @@ const ProjectsSection:React.FC = () => {
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/username/whatsapp-clone",
+        "url": "https://github.com/Dip3102001/Whatsapp-clone",
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
@@ -436,22 +433,6 @@ const ProjectsSection:React.FC = () => {
     "skills": [
       "C (Programming Language)", "C++", "Standard Template Library (STL)", "Cryptography", "Algorithmic Problem Solving"
     ],
-    
-    // Links
-    "links": [
-      {
-        "type": "github",
-        "url": "https://github.com/username/enigma-simulation",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      }
-      // {
-      //   "type": "external",
-      //   "url": "https://enigma-simulation-demo.example.com",
-      //   "title": "Live Demo",
-      //   "description": "Try the Enigma simulation online"
-      // }
-    ]
   },
   {
     "id": "bluetooth-car",
@@ -501,28 +482,7 @@ const ProjectsSection:React.FC = () => {
     "skills": [
       "Arduino", "Microcontrollers", "Hardware-Software Integration"
     ],
-    
-    // Links
-    "links": [
-      {
-        "type": "github",
-        "url": "https://github.com/username/bluetooth-car",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      }
-      // {
-      //   "type": "external",
-      //   "url": "https://bluetooth-car-demo.example.com",
-      //   "title": "Live Demo",
-      //   "description": "Try the Bluetooth-controlled car in action"
-      // }
-    ]
-  }
-
-
-
-  
-  
+  }  
 ];
 
   return (
