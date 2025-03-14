@@ -196,14 +196,20 @@ const ProjectsSection:React.FC = () => {
       {
         "type": "github",
         "url": "https://github.com/Dip3102001/Clickbait-1",
-        "title": "Source Code",
+        "title": "Source Code For Clickbait-detection",
         "description": "View the complete source code on GitHub"
       },
       {
         "type": "github",
         "url": "https://github.com/Dip3102001/Clickbait-2",
-        "title": "Source Code",
+        "title": "Source Code for Clickbait-generation",
         "description": "View the complete source code on GitHub"
+      },
+      {
+        "type": "external",
+        "url": "/MSCI_FINAL_REPORT.pdf",
+        "title": "PDF",
+        "description": "Final Project Report"
       }
     ]
   },
@@ -257,6 +263,14 @@ const ProjectsSection:React.FC = () => {
       "Image Processing", "Machine Learning", "Deep Learning", 
       "Model Optimization", "Python", "PyTorch", "Shell Scripting", 
       "ArcGIS", "Automated Data Processing"
+    ],
+    "links": [
+      {
+        "type": "external",
+        "url": "/SeaIce-Classification-report-isro.pdf",
+        "title": "PDF",
+        "description": "Final Project Report"
+      }
     ]
   },
   {
@@ -310,6 +324,15 @@ const ProjectsSection:React.FC = () => {
       "PyTorch", "Python", "Model Optimization", "Web Development",
       "Flask Backend Development"
     ],
+    
+    "links": [
+      {
+        "type": "external",
+        "url": "/Report_ImageColorization.pdf",
+        "title": "PDF",
+        "description": "Final Project Report"
+      }
+    ]    
   },
   {
     "id": "whatsapp-clone",
@@ -357,12 +380,10 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Skills showcased
     "skills": [
       "Android Development", "Firebase", "Google Cloud Platform (GCP)", "SQLite"
     ],
     
-    // Links
     "links": [
       {
         "type": "github",
@@ -370,12 +391,6 @@ const ProjectsSection:React.FC = () => {
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
-      // {
-      //   "type": "external",
-      //   "url": "https://whatsapp-clone-demo.example.com",
-      //   "title": "Live Demo",
-      //   "description": "Try the messaging application online"
-      // }
     ]
   },
   {
@@ -386,7 +401,6 @@ const ProjectsSection:React.FC = () => {
     "shortDescription": "A C++ simulation of the Enigma machine for demonstrating encryption.",
     "description": "As part of a Discrete Mathematics course at Birla Vishvakarma Mahavidyalaya, our team delivered a presentation on the Enigma machine. I contributed by developing a C++ simulation that provided a hands-on demonstration of its functionality and encryption process. The project showcased how the Enigma cipher works, including rotor mechanisms and letter substitutions, helping to illustrate its historical significance in cryptography.",
     
-    // Features list
     "features": [
       {
         "title": "Enigma Machine Simulation",
@@ -406,7 +420,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Technologies list
     "technologies": [
       {
         "category": "Programming Languages",
@@ -418,7 +431,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Skills showcased
     "skills": [
       "C (Programming Language)", "C++", "Standard Template Library (STL)", "Cryptography", "Algorithmic Problem Solving"
     ],
@@ -431,7 +443,6 @@ const ProjectsSection:React.FC = () => {
     "shortDescription": "An Arduino-based Bluetooth-controlled car for hands-on embedded systems learning.",
     "description": "As part of our first-year project in Semiconductor Technology at Birla Vishvakarma Mahavidyalaya, we designed and developed a Bluetooth-controlled car using Arduino. This project provided hands-on experience with microcontrollers and hardware interfacing, enhancing our understanding of embedded systems. It also allowed us to apply theoretical knowledge to real-world problem-solving, fostering technical proficiency and teamwork.",
     
-    // Features list
     "features": [
       {
         "title": "Bluetooth Control",
@@ -451,7 +462,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Technologies list
     "technologies": [
       {
         "category": "Microcontroller",
