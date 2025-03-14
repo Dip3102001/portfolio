@@ -64,31 +64,31 @@ const SkillsSection:React.FC = () => {
   }, []);
 
 return (
-    <div className="min-h-screen flex items-center justify-center p-6">
-      <div className="max-w-6xl w-full">
-        <h1 className="text-4xl font-bold text-center mb-8">Technical Skills</h1>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title text-2xl mb-4">{category.title}</h2>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div
-                        key={skillIndex}
-                        className={`badge animated-gradient text-white cursor-pointer transition-all duration-300`}
-                    >
-                        {skill}
-                    </div>
-                  ))}
+  <div className="flex items-center justify-center p-12">  {/* Removed min-h-screen */}
+  <div className="w-full">
+    <h1 className="text-4xl font-bold text-center mb-8">Technical Skills</h1>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {skillCategories.map((category, index) => (
+        <div key={index} className="card bg-base-100 shadow-xl">
+          <div className="card-body">
+            <h2 className="card-title text-2xl mb-4">{category.title}</h2>
+            <div className="flex flex-wrap gap-2">
+              {category.skills.map((skill, skillIndex) => (
+                <div
+                  key={skillIndex}
+                  className={`badge animated-gradient text-white cursor-pointer transition-all duration-300`}
+                >
+                  {skill}
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
+  </div>
+</div>
   );
 };
 // };

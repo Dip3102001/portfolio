@@ -11,7 +11,6 @@ const ProjectsSection:React.FC = () => {
     shortDescription: "A fully functional chess game with intuitive UI (In-Dev)",
     description: "This project is a fully functional chess game application, built with a focus on intuitive gameplay, smooth user experience, and robust game logic. The application features a well-implemented chess engine that accurately enforces game rules, validates legal moves, and detects check, checkmate, and stalemate conditions.",
     
-    // Features list
     features: [
       {
         title: "Two-Player Mode",
@@ -39,7 +38,6 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Technologies list
     technologies: [
       {
         category: "Frontend",
@@ -55,13 +53,11 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
-    // Skills showcased (new section)
     skills: [
       "Frontend Development", "Angular", "JavaScript", "Game Development", 
       "Algorithm Design", "Responsive Design"
     ],
     
-    // Links
     links: [
       {
         type: "github",
@@ -81,7 +77,7 @@ const ProjectsSection:React.FC = () => {
   {
     "id": "camera-placement-optimization",
     "title": "Optimized Camera Placement System",
-    "image": "/camoptix.webp",
+    "image": "/camoptix-v2.webp",
     "timeline": "ECE-650 Project",
     "shortDescription": "A system for optimizing street camera placement using graph theory and SAT solvers.",
     "description": "This project focused on optimizing camera placement on streets to ensure maximum coverage of intersections and roadways. It was executed in four iterative phases, each addressing a critical aspect of the problem. The first phase involved identifying street intersections on a given map, representing crossings as vertices and roads as edges. The second phase implemented an algorithm to compute the shortest path between vertices. The third phase introduced a randomized input generator for testing the algorithm, incorporating inter-process communication to enhance workflow efficiency. In the final phase, the problem was transformed into Conjunctive Normal Form (CNF), and an off-the-shelf SAT solver was used to determine the minimum number of intersections required for camera coverage.",
@@ -330,7 +326,7 @@ const ProjectsSection:React.FC = () => {
   {
     "id": "whatsapp-clone",
     "title": "WhatsApp Clone",
-    "image": "/wp.png",
+    "image": "/wp-v2.webp",
     "timeline": "May 2022 - Dec 2022",
     "shortDescription": "A messaging app inspired by WhatsApp with real-time chat and authentication.",
     "description": "As part of our end-semester Android project at Birla Vishvakarma Mahavidyalaya, we developed a WhatsApp-inspired messaging application to explore various Android development concepts. The app features a user-friendly UI for seamless interaction, mobile number-based authentication for secure access, and real-time message notifications powered by Firebase. Additionally, SQLite was used to maintain chat history, ensuring a persistent and reliable messaging experience. This project helped us integrate core Android functionalities with advanced features to create a robust messaging platform.",

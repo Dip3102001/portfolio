@@ -24,12 +24,17 @@ const Hero:React.FC = () => {
             {/* Text Content */}
             <div>
               <h1 className="text-4xl font-bold mb-4">
-                <span className="text-white">Code</span>,{" "}
-                <span className="text-orange-400">Coffee</span>,{" "}
-                <span className="text-white">Create</span>! I'm Dip Patel
+                Hey, I am Dip Vijaykumar
+                <br/>
+                <br/>
               </h1>
+              <h2 className="text-2xl font-bold mb-4">
+                <span className="text-white">Curious</span>,{" "}
+                <span className="text-orange-400">tinkerer</span>,{" "}
+                <span className="text-white">Explorer</span>
+              </h2>
               <p className="text-xl mb-8">
-                a back-end virtuoso, crafting seamless and powerful digital solutions!
+                A tech maestro, blending software craftsmanship with cutting-edge AI to build intelligent and impactful solutions!
               </p>
               
               {/* Buttons */}
