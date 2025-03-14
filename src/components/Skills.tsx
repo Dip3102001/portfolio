@@ -91,6 +91,5 @@ return (
 </div>
   );
 };
-// };
 
 export default SkillsSection;
