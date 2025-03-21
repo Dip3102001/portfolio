@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const ChatbotWidget : React.FC = () => {
+const ChatbotWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: 'Hello, I am Dxon (Dip’s + Neuron), a prototype AI modeled after Dip. I process his knowledge, projects, and experiences, so you can ask me anything about him. No small talk—just data, logic, and straight answers.' }
+    { sender: 'bot', text: 'Hello, I am Dxon (Dip\'s + Neuron), a prototype AI modeled after Dip. I process his knowledge, projects, and experiences, so you can ask me anything about him. No small talk—just data, logic, and straight answers.' }
   ]);
   const [inputValue, setInputValue] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -18,7 +19,7 @@ const ChatbotWidget : React.FC = () => {
     }
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
@@ -32,45 +33,82 @@ const ChatbotWidget : React.FC = () => {
     }
   }, [messages, isOpen]);
 
-  const handleSendMessage = (e) => {
-    e.preventDefault();
-    
-    if (!inputValue.trim()) return;
-    
-    // Add user message
-    const newMessages = [
-      ...messages,
-      { sender: 'user', text: inputValue }
-    ];
-    
-    setMessages(newMessages);
-    setInputValue('');
-    
-    // Simulate bot response after delay
-    setTimeout(() => {
-      // Add bot response - This would be replaced with your actual bot integration
-      setMessages(prev => [
-        ...prev, 
-        { 
-          sender: 'bot', 
-          text: getBotResponse(inputValue) 
-        }
-      ]);
-    }, 600);
-  };
-
   // Simple response function - replace with your actual bot integration
-  const getBotResponse = (input) => {
+  const getBotResponse = async (input: string) => {
     const normalizedInput = input.toLowerCase();
     
-    if (normalizedInput.includes('hello') || normalizedInput.includes('hi')) {
+    if (normalizedInput.includes('hello')) {
       return 'Hello! How can I assist you today?';
     } else if (normalizedInput.includes('help')) {
       return 'I can help answer questions about our products, services, or provide general assistance. What do you need help with?';
     } else if (normalizedInput.includes('bye') || normalizedInput.includes('goodbye')) {
       return 'Goodbye! Have a great day!';
     } else {
-      return "I'll need to process that request. Could you provide more details or ask another question?";
+      try {
+        
+        console.log("Entered..");
+
+        const payload = { question: normalizedInput };
+
+        console.log(payload);
+
+        const response = await fetch("/api/proxy", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          throw new Error(`API responded with status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        return data.response;
+      } catch (error) {
+        console.error("Error fetching from API:", error);
+        return "Sorry, I couldn't connect to my knowledge base. Please try again later.";
+      }
+    }
+  };
+
+  const handleSendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!inputValue.trim()) return;
+    
+    // First, add user message
+    const userMessage = inputValue.trim();
+    setMessages(prevMessages => [
+      ...prevMessages,
+      { sender: 'user', text: userMessage }
+    ]);
+    setInputValue('');
+    
+    // Show loading state
+    setIsLoading(true);
+    
+    // Then get bot response
+    try {
+      const botResponse = await getBotResponse(userMessage);
+      
+      // Add bot response as a separate update
+      setMessages(prevMessages => [
+        ...prevMessages,
+        { sender: 'bot', text: botResponse }
+      ]);
+    } catch (error) {
+      console.error("Error in handleSendMessage:", error);
+      setMessages(prevMessages => [
+        ...prevMessages,
+        { sender: 'bot', text: "An error occurred. Please try again." }
+      ]);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -95,7 +133,7 @@ const ChatbotWidget : React.FC = () => {
 
       {/* Chat window */}
       {isOpen && (
-        <div className="card w-80 md:w-96 h-96 bg-base-100 shadow-xl absolute bottom-20 right-0 flex flex-col overflow-hidden " >
+        <div className="card w-80 md:w-96 h-96 bg-base-100 shadow-xl absolute bottom-20 right-0 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="card-title bg-primary text-primary-content p-4 justify-between">
             <h3>Dxon</h3>
@@ -123,11 +161,18 @@ const ChatbotWidget : React.FC = () => {
                 </div>
               </div>
             ))}
+            {isLoading && (
+              <div className="chat chat-start mb-3">
+                <div data-theme="mytheme" className="chat-bubble other-bubble flex items-center">
+                  <span className="loading loading-dots loading-sm"></span>
+                </div>
+              </div>
+            )}
             <div ref={messagesEndRef} />
           </div>
           
           {/* Input area */}
-          <form onSubmit={handleSendMessage} className="border-t border-base-300 p-3 flex" >
+          <form onSubmit={handleSendMessage} className="border-t border-base-300 p-3 flex">
             <input
               ref={inputRef}
               type="text"
@@ -135,15 +180,20 @@ const ChatbotWidget : React.FC = () => {
               onChange={handleInputChange}
               placeholder="Type a message..."
               className="input input-bordered flex-1 rounded-r-none"
+              disabled={isLoading}
             />
             <button 
               type="submit"
               className="btn btn-primary rounded-l-none"
-              disabled={!inputValue.trim()}
+              disabled={!inputValue.trim() || isLoading}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
+              {isLoading ? (
+                <span className="loading loading-spinner loading-xs"></span>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              )}
             </button>
           </form>
         </div>
