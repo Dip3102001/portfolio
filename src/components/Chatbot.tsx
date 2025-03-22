@@ -52,7 +52,7 @@ const ChatbotWidget: React.FC = () => {
 
         console.log(payload);
 
-        const response = await fetch("/api/proxy", {
+        const response = await fetch("http://3.144.96.14/api/answer", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
