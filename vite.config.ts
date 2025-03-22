@@ -17,7 +17,7 @@ export default defineConfig({
       '/api/proxy/health': {
         target: 'http://3.144.96.14',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/proxy/, '/api/health')
+        rewrite: (path) => path.replace(/^\/api\/proxy\/health/, '/api/health')
       }
     }
   }
