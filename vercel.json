@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/proxy/answer",
+        "destination": "http://3.144.96.14/api/answer"
+      },
+      {
+        "source": "/api/proxy/health",
+        "destination": "http://3.144.96.14/api/health"
+      }
+    ]
+  }
