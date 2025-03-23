@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 const ChatbotWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: 'Hello, I am Dxon (Dip\'s + Neuron), a prototype AI modeled after Dip. I process his knowledge, projects, and experiences, so you can ask me anything about him. No small talk—just data, logic, and straight answers.' }
+    { sender: 'bot', text: 'Hello, I am D-Neuron (Dip\'s + Neuron), a prototype AI modeled after Dip. I process his knowledge, projects, and experiences, so you can ask me anything about him. No small talk—just data, logic, and straight answers.'}
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -136,7 +136,7 @@ const ChatbotWidget: React.FC = () => {
         <div className="card w-80 md:w-96 h-96 bg-base-100 shadow-xl absolute bottom-20 right-0 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="card-title bg-primary text-primary-content p-4 justify-between">
-            <h3>Dxon</h3>
+            <h3>D-Neuron</h3>
             <button 
               onClick={toggleChat}
               className="btn btn-circle btn-xs btn-ghost"
