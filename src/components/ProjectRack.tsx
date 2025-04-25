@@ -3,143 +3,7 @@ import ProjectCard from './ProjectCard';
 
 const ProjectsSection:React.FC = () => {
   // Sample project data
-  const projects = [{
-    id: "chess-game",
-    title: "Chess Game Application",
-    image: "/chess.jpg",
-    timeline: "Jan 2024 - Mar 2024",
-    shortDescription: "A fully functional chess game with intuitive UI (In-Dev)",
-    description: "This project is a fully functional chess game application, built with a focus on intuitive gameplay, smooth user experience, and robust game logic. The application features a well-implemented chess engine that accurately enforces game rules, validates legal moves, and detects check, checkmate, and stalemate conditions.",
-    
-    features: [
-      {
-        title: "Two-Player Mode",
-        description: "Play against a friend locally"
-      },
-      {
-        title: "Move Validation",
-        description: "Ensures only legal moves are allowed"
-      },
-      {
-        title: "Check & Checkmate Detection",
-        description: "Identifies game-ending conditions"
-      },
-      {
-        title: "Piece Highlighting",
-        description: "Shows possible moves for selected pieces"
-      },
-      {
-        title: "Responsive UI",
-        description: "Provides a seamless experience across different screen sizes"
-      },
-      {
-        title: "Game State Management",
-        description: "Keeps track of moves and board history"
-      }
-    ],
-    
-    technologies: [
-      {
-        category: "Frontend",
-        details: "Angular with DaisyUI"
-      },
-      {
-        category: "Backend",
-        details: "Node.js"
-      },
-      {
-        category: "Styling",
-        details: "Tailwind CSS"
-      }
-    ],
-    
-    skills: [
-      "Frontend Development", "Angular", "JavaScript", "Game Development", 
-      "Algorithm Design", "Responsive Design"
-    ],
-    
-    links: [
-      {
-        type: "github",
-        url: "https://github.com/Dip3102001/chess",
-        title: "Source Code",
-        description: "View the complete source code on GitHub"
-      }
-      // {
-      //   type: "external",
-      //   url: "https://chess-game-demo.example.com",
-      //   title: "Live Demo",
-      //   description: "Try the chess game application online"
-      // }
-    ]
-  },
-
-  {
-    "id": "camera-placement-optimization",
-    "title": "Optimized Camera Placement System",
-    "image": "/camoptix-v2.webp",
-    "timeline": "ECE-650 Project",
-    "shortDescription": "A system for optimizing street camera placement using graph theory and SAT solvers.",
-    "description": "This project focused on optimizing camera placement on streets to ensure maximum coverage of intersections and roadways. It was executed in four iterative phases, each addressing a critical aspect of the problem. The first phase involved identifying street intersections on a given map, representing crossings as vertices and roads as edges. The second phase implemented an algorithm to compute the shortest path between vertices. The third phase introduced a randomized input generator for testing the algorithm, incorporating inter-process communication to enhance workflow efficiency. In the final phase, the problem was transformed into Conjunctive Normal Form (CNF), and an off-the-shelf SAT solver was used to determine the minimum number of intersections required for camera coverage.",
-    
-    "features": [
-      {
-        "title": "Graph Representation",
-        "description": "Models intersections as vertices and roads as edges."
-      },
-      {
-        "title": "Shortest Path Calculation",
-        "description": "Implements an algorithm to compute optimal routes."
-      },
-      {
-        "title": "Randomized Input Generator",
-        "description": "Generates test cases to validate the algorithm."
-      },
-      {
-        "title": "Inter-Process Communication",
-        "description": "Facilitates efficient data exchange between processes."
-      },
-      {
-        "title": "SAT Solver Integration",
-        "description": "Determines the minimal camera coverage using CNF transformation."
-      }
-    ],
-    
-    "technologies": [
-      {
-        "category": "Programming Languages",
-        "details": "C++, Python"
-      },
-      {
-        "category": "Operating System",
-        "details": "Linux"
-      },
-      {
-        "category": "Version Control",
-        "details": "Git"
-      },
-      {
-        "category": "System Design",
-        "details": "Multiprocessing, Multithreading, Inter-Process Communication"
-      }
-    ],
-    
-    "skills": [
-      "Graph Algorithms", "C++", "Python", "Linux", "Git", 
-      "Multiprocessing", "Multithreading", "Inter-Process Communication", 
-      "Unit Testing", "Integration Testing", "SAT Solvers"
-    ],
-    
-    "links": [
-      {
-        "type": "github",
-        "url": "https://github.com/Dip3102001/CamOptix",
-        "title": "Source Code",
-        "description": "View the complete source code on GitHub"
-      }
-    ]
-  },
-
+  const projects = [
   {
     "id": "clickbait-generation-classification",
     "title": "Clickbait Generation and Classification",
@@ -195,21 +59,9 @@ const ProjectsSection:React.FC = () => {
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/Dip3102001/Clickbait-1",
-        "title": "Source Code For Clickbait-detection",
+        "url": "https://github.com/username/clickbait-project",
+        "title": "Source Code",
         "description": "View the complete source code on GitHub"
-      },
-      {
-        "type": "github",
-        "url": "https://github.com/Dip3102001/Clickbait-2",
-        "title": "Source Code for Clickbait-generation",
-        "description": "View the complete source code on GitHub"
-      },
-      {
-        "type": "external",
-        "url": "/MSCI_FINAL_REPORT.pdf",
-        "title": "PDF",
-        "description": "Final Project Report"
       }
     ]
   },
@@ -264,12 +116,13 @@ const ProjectsSection:React.FC = () => {
       "Model Optimization", "Python", "PyTorch", "Shell Scripting", 
       "ArcGIS", "Automated Data Processing"
     ],
+    
     "links": [
       {
-        "type": "external",
-        "url": "/SeaIce-Classification-report-isro.pdf",
-        "title": "PDF",
-        "description": "Final Project Report"
+        "type": "github",
+        "url": "https://github.com/username/sea-ice-classification",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
       }
     ]
   },
@@ -327,21 +180,161 @@ const ProjectsSection:React.FC = () => {
     
     "links": [
       {
-        "type": "external",
-        "url": "/Report_ImageColorization.pdf",
-        "title": "PDF",
-        "description": "Final Project Report"
+        "type": "github",
+        "url": "https://github.com/username/image-colorization",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
       }
-    ]    
+    ]
+  },
+  {
+    "id": "camera-placement-optimization",
+    "title": "Optimized Camera Placement System",
+    "image": "/camoptix.webp",
+    "timeline": "ECE-650 Project",
+    "shortDescription": "A system for optimizing street camera placement using graph theory and SAT solvers.",
+    "description": "This project focused on optimizing camera placement on streets to ensure maximum coverage of intersections and roadways. It was executed in four iterative phases, each addressing a critical aspect of the problem. The first phase involved identifying street intersections on a given map, representing crossings as vertices and roads as edges. The second phase implemented an algorithm to compute the shortest path between vertices. The third phase introduced a randomized input generator for testing the algorithm, incorporating inter-process communication to enhance workflow efficiency. In the final phase, the problem was transformed into Conjunctive Normal Form (CNF), and an off-the-shelf SAT solver was used to determine the minimum number of intersections required for camera coverage.",
+    
+    "features": [
+      {
+        "title": "Graph Representation",
+        "description": "Models intersections as vertices and roads as edges."
+      },
+      {
+        "title": "Shortest Path Calculation",
+        "description": "Implements an algorithm to compute optimal routes."
+      },
+      {
+        "title": "Randomized Input Generator",
+        "description": "Generates test cases to validate the algorithm."
+      },
+      {
+        "title": "Inter-Process Communication",
+        "description": "Facilitates efficient data exchange between processes."
+      },
+      {
+        "title": "SAT Solver Integration",
+        "description": "Determines the minimal camera coverage using CNF transformation."
+      }
+    ],
+    
+    "technologies": [
+      {
+        "category": "Programming Languages",
+        "details": "C++, Python"
+      },
+      {
+        "category": "Operating System",
+        "details": "Linux"
+      },
+      {
+        "category": "Version Control",
+        "details": "Git"
+      },
+      {
+        "category": "System Design",
+        "details": "Multiprocessing, Multithreading, Inter-Process Communication"
+      }
+    ],
+    
+    "skills": [
+      "Graph Algorithms", "C++", "Python", "Linux", "Git", 
+      "Multiprocessing", "Multithreading", "Inter-Process Communication", 
+      "Unit Testing", "Integration Testing", "SAT Solvers"
+    ],
+    
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/username/camera-placement",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
+      }
+    ]
+  },
+  {
+    id: "chess-game",
+    title: "Chess Game Application",
+    image: "/chess.jpg",
+    timeline: "Jan 2024 - Mar 2024",
+    shortDescription: "A fully functional chess game with intuitive UI (In-Dev)",
+    description: "This project is a fully functional chess game application, built with a focus on intuitive gameplay, smooth user experience, and robust game logic. The application features a well-implemented chess engine that accurately enforces game rules, validates legal moves, and detects check, checkmate, and stalemate conditions.",
+    
+    // Features list
+    features: [
+      {
+        title: "Two-Player Mode",
+        description: "Play against a friend locally"
+      },
+      {
+        title: "Move Validation",
+        description: "Ensures only legal moves are allowed"
+      },
+      {
+        title: "Check & Checkmate Detection",
+        description: "Identifies game-ending conditions"
+      },
+      {
+        title: "Piece Highlighting",
+        description: "Shows possible moves for selected pieces"
+      },
+      {
+        title: "Responsive UI",
+        description: "Provides a seamless experience across different screen sizes"
+      },
+      {
+        title: "Game State Management",
+        description: "Keeps track of moves and board history"
+      }
+    ],
+    
+    // Technologies list
+    technologies: [
+      {
+        category: "Frontend",
+        details: "Angular with DaisyUI"
+      },
+      {
+        category: "Backend",
+        details: "Node.js"
+      },
+      {
+        category: "Styling",
+        details: "Tailwind CSS"
+      }
+    ],
+    
+    // Skills showcased (new section)
+    skills: [
+      "Frontend Development", "Angular", "JavaScript", "Game Development", 
+      "Algorithm Design", "Responsive Design"
+    ],
+    
+    // Links
+    links: [
+      {
+        type: "github",
+        url: "https://github.com/username/chess-game",
+        title: "Source Code",
+        description: "View the complete source code on GitHub"
+      }
+      // {
+      //   type: "external",
+      //   url: "https://chess-game-demo.example.com",
+      //   title: "Live Demo",
+      //   description: "Try the chess game application online"
+      // }
+    ]
   },
   {
     "id": "whatsapp-clone",
     "title": "WhatsApp Clone",
-    "image": "/wp-v2.webp",
+    "image": "/wp.png",
     "timeline": "May 2022 - Dec 2022",
     "shortDescription": "A messaging app inspired by WhatsApp with real-time chat and authentication.",
     "description": "As part of our end-semester Android project at Birla Vishvakarma Mahavidyalaya, we developed a WhatsApp-inspired messaging application to explore various Android development concepts. The app features a user-friendly UI for seamless interaction, mobile number-based authentication for secure access, and real-time message notifications powered by Firebase. Additionally, SQLite was used to maintain chat history, ensuring a persistent and reliable messaging experience. This project helped us integrate core Android functionalities with advanced features to create a robust messaging platform.",
     
+    // Features list
     "features": [
       {
         "title": "Real-Time Messaging",
@@ -365,6 +358,7 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Technologies list
     "technologies": [
       {
         "category": "Frontend",
@@ -380,17 +374,25 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Skills showcased
     "skills": [
       "Android Development", "Firebase", "Google Cloud Platform (GCP)", "SQLite"
     ],
     
+    // Links
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/Dip3102001/Whatsapp-clone",
+        "url": "https://github.com/username/whatsapp-clone",
         "title": "Source Code",
         "description": "View the complete source code on GitHub"
       }
+      // {
+      //   "type": "external",
+      //   "url": "https://whatsapp-clone-demo.example.com",
+      //   "title": "Live Demo",
+      //   "description": "Try the messaging application online"
+      // }
     ]
   },
   {
@@ -401,6 +403,7 @@ const ProjectsSection:React.FC = () => {
     "shortDescription": "A C++ simulation of the Enigma machine for demonstrating encryption.",
     "description": "As part of a Discrete Mathematics course at Birla Vishvakarma Mahavidyalaya, our team delivered a presentation on the Enigma machine. I contributed by developing a C++ simulation that provided a hands-on demonstration of its functionality and encryption process. The project showcased how the Enigma cipher works, including rotor mechanisms and letter substitutions, helping to illustrate its historical significance in cryptography.",
     
+    // Features list
     "features": [
       {
         "title": "Enigma Machine Simulation",
@@ -420,6 +423,7 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Technologies list
     "technologies": [
       {
         "category": "Programming Languages",
@@ -431,9 +435,26 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Skills showcased
     "skills": [
       "C (Programming Language)", "C++", "Standard Template Library (STL)", "Cryptography", "Algorithmic Problem Solving"
     ],
+    
+    // Links
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/username/enigma-simulation",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
+      }
+      // {
+      //   "type": "external",
+      //   "url": "https://enigma-simulation-demo.example.com",
+      //   "title": "Live Demo",
+      //   "description": "Try the Enigma simulation online"
+      // }
+    ]
   },
   {
     "id": "bluetooth-car",
@@ -443,6 +464,7 @@ const ProjectsSection:React.FC = () => {
     "shortDescription": "An Arduino-based Bluetooth-controlled car for hands-on embedded systems learning.",
     "description": "As part of our first-year project in Semiconductor Technology at Birla Vishvakarma Mahavidyalaya, we designed and developed a Bluetooth-controlled car using Arduino. This project provided hands-on experience with microcontrollers and hardware interfacing, enhancing our understanding of embedded systems. It also allowed us to apply theoretical knowledge to real-world problem-solving, fostering technical proficiency and teamwork.",
     
+    // Features list
     "features": [
       {
         "title": "Bluetooth Control",
@@ -462,6 +484,7 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Technologies list
     "technologies": [
       {
         "category": "Microcontroller",
@@ -477,10 +500,32 @@ const ProjectsSection:React.FC = () => {
       }
     ],
     
+    // Skills showcased
     "skills": [
       "Arduino", "Microcontrollers", "Hardware-Software Integration"
     ],
-  }  
+    
+    // Links
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/username/bluetooth-car",
+        "title": "Source Code",
+        "description": "View the complete source code on GitHub"
+      }
+      // {
+      //   "type": "external",
+      //   "url": "https://bluetooth-car-demo.example.com",
+      //   "title": "Live Demo",
+      //   "description": "Try the Bluetooth-controlled car in action"
+      // }
+    ]
+  }
+
+
+
+  
+  
 ];
 
   return (

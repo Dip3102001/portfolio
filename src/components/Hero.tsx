@@ -15,7 +15,7 @@ const Hero:React.FC = () => {
             {/* Profile Image */}
             <div className="w-50 h-50 rounded-full bg-white p-2 mb-8">
               <img 
-                src="/me.jpg" 
+                src="/mee.png" 
                 alt="Profile" 
                 className="w-full h-full object-cover rounded-full"
               />
@@ -47,7 +47,7 @@ const Hero:React.FC = () => {
                   
                 </a>
                 <a 
-                  href="/Dip Vijaykumar - Resume - SDE.pdf" 
+                  href="/ML-Resume-DIP.pdf" 
                   download 
                   className="px-6 py-3 bg-gray-700 bg-opacity-50 hover:bg-opacity-70 rounded-lg flex items-center gap-2"
                 >
