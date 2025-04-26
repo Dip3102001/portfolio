@@ -329,7 +329,7 @@ const ProjectsSection:React.FC = () => {
   {
     "id": "whatsapp-clone",
     "title": "WhatsApp Clone",
-    "image": "/wp.png",
+    "image": "/wp-v2.webp",
     "timeline": "May 2022 - Dec 2022",
     "shortDescription": "A messaging app inspired by WhatsApp with real-time chat and authentication.",
     "description": "As part of our end-semester Android project at Birla Vishvakarma Mahavidyalaya, we developed a WhatsApp-inspired messaging application to explore various Android development concepts. The app features a user-friendly UI for seamless interaction, mobile number-based authentication for secure access, and real-time message notifications powered by Firebase. Additionally, SQLite was used to maintain chat history, ensuring a persistent and reliable messaging experience. This project helped us integrate core Android functionalities with advanced features to create a robust messaging platform.",
